@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+body {
+    font-family: 'Bungee Spice', cursive;
+    background-color: rgb(6, 61, 61);
+}
+#seleccionar-mascota {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo {
+    color: rgba(59, 156, 98, 0.71);
+    font-size: 32px
+} 
+.subtitulo{
+    color:rgba(161, 111, 18, 0.693);
+    font-size: 14px;
+}
+.tarjetas, .tarjeta-ataques {
+    display:flex;
+    gap: 10px;
+}
+.tarjeta-de-mokepon img {
+    width:100px;
+    display:flex;
+    align-items: flex-end;
+}
+.tarjeta-de-mokepon {
+    width: 210px;
+    height: 100px;
+    background-color: rgb(49, 4, 41);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center
+
+}
+
+#boton-mascota {
+    font-family: 'Bungee Spice', cursive;
+    width: 117px;
+    height: 47px;
+    border-block-color: inherit;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid;
+    color: white;
+    margin-top: 30px;
+}
+input {
+   display: none;
+}
+input:checked + label{
+   background-color: black;
+}
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    background-color: rgb(49, 4, 41) ;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: 'Bungee Spice', cursive;
+}
+#mensajes{ 
+    width: 307px;
+    background-color: black;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 33px;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+#boton-reiniciar {
+border: none;
+color:rgb(49, 4, 41);
+font-family: 'Bungee Spice', cursive;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    }
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.ataques-del-jugador, .ataques-del-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #ver-mapa {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+ }
+ #ver-mapa button{
+ font-family: 'Bungee Spice', cursive;
+ width: 80px;
+ height: 40px;
+ border-block-color: inherit;
+ border-radius: 20px;
+ background: transparent;
+ border: 2px solid;
+ color: white;
+ margin: 10px  0;
+ }
+
+@media (max-width: 560px) { 
+    .tarjetas, .tarjetas-ataques{ 
+        flex-direction: column;
+ }
+ }
+ @media (max-width: 300px) { 
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+ }
